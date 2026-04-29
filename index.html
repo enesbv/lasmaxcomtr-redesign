@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lasmax | Yola Güvenle Çıkın</title>
+    <meta
+      name="description"
+      content="Lasmax'in endüstriyel gücünü, öne çıkan lastiklerini ve Türkiye genelindeki bayi ağını öne çıkaran kurumsal anasayfa."
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body data-page="home">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="index.html" aria-label="Lasmax anasayfa">
+          <img src="assets/logo-main.svg" alt="Lasmax">
+        </a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Menüyü aç" data-menu-toggle>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav" aria-label="Ana menü" data-menu>
+          <a class="site-nav__link is-active" href="#urunler">Ürünler</a>
+          <a class="site-nav__link" href="#markalar">Markalar</a>
+          <a class="site-nav__link" href="#servisler">Servisler</a>
+          <a class="site-nav__link" href="about.html">Hakkımızda</a>
+          <a class="site-nav__link" href="#iletisim">Bize Ulaşın</a>
+        </nav>
+
+        <a class="labis-link" href="https://www.lasmaxbayi.com" target="_blank" rel="noopener noreferrer" aria-label="LABİS girişi">
+          <img src="assets/labis.png" alt="LABİS">
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero home-hero">
+        <div
+          class="hero__media"
+          style="background-image: url('assets/hero-home.jpg');"
+        ></div>
+        <div class="hero__overlay"></div>
+        <div class="shell--wide hero__content">
+          <div class="hero__copy">
+            <h1>Yola Güvenle <span>Çıkın</span></h1>
+            <p class="hero__lede">
+              Endüstriyel gücü ve ileri mühendisliği bir araya getiren lastiklerimizle sürüş
+              deneyiminizi zirveye taşıyın. Lasmax, global markaların Türkiye'deki güçlü dağıtım ortağıdır.
+            </p>
+            <div class="hero__actions">
+              <a class="button button--primary" href="#arama">
+                Lastik Ara
+                <img
+                  class="button__icon"
+                  src="assets/arrow-primary.svg"
+                  alt=""
+                >
+              </a>
+              <a class="button button--ghost" href="about.html">Kurumsal Çözümler</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="search-panel shell--wide" id="arama">
+        <div class="search-panel__card">
+          <div class="search-panel__heading">
+            <img src="assets/search-icon.svg" alt="">
+            <span>Lastik Arama Sihirbazı</span>
+          </div>
+          <form class="search-panel__form" data-search-form>
+            <div class="field">
+              <label for="genislik">Genişlik</label>
+              <select id="genislik" name="genislik">
+                <option selected>205</option>
+                <option>195</option>
+                <option>215</option>
+                <option>225</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="profil">Profil</label>
+              <select id="profil" name="profil">
+                <option selected>55</option>
+                <option>50</option>
+                <option>60</option>
+                <option>65</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="jant">Jant</label>
+              <select id="jant" name="jant">
+                <option selected>R16</option>
+                <option>R15</option>
+                <option>R17</option>
+                <option>R18</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="marka">Marka</label>
+              <select id="marka" name="marka">
+                <option selected>Tüm Markalar</option>
+                <option>Triangle</option>
+                <option>Groundspeed</option>
+                <option>Unigrip</option>
+              </select>
+            </div>
+            <button class="button button--primary button--compact search-panel__submit" type="submit">
+              Ara
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="shell--wide">
+          <div class="features__grid">
+            <article class="feature">
+              <img src="assets/feature-network.svg" alt="">
+              <h3>Geniş Marka Ağı</h3>
+              <p>Dünyanın en prestijli lastik markaları tek bir çatı altında, sizin için bir arada.</p>
+            </article>
+            <article class="feature">
+              <img src="assets/feature-delivery.svg" alt="">
+              <h3>Hızlı Tedarik</h3>
+              <p>Güçlü lojistik altyapımızla ihtiyacınız olan ürünler tam zamanında kapınızda.</p>
+            </article>
+            <article class="feature">
+              <img src="assets/feature-service.svg" alt="">
+              <h3>Güvenilir Hizmet</h3>
+              <p>Satış öncesi ve sonrası uzman desteğiyle endüstriyel güvenin adresi.</p>
+            </article>
+            <article class="feature">
+              <img src="assets/feature-dealer.svg" alt="">
+              <h3>Bayi Ağı</h3>
+              <p>Türkiye'nin her noktasında yaygın bayi ağımızla size her zaman yakınız.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="brand-band" id="markalar">
+        <div class="shell">
+          <div class="brand-band__row">
+            <img
+              src="assets/brand-triangle.png"
+              alt="Triangle"
+              loading="lazy"
+            >
+            <img
+              src="assets/brand-groundspeed.png"
+              alt="Groundspeed"
+              loading="lazy"
+            >
+            <img
+              src="assets/brand-westlake.svg"
+              alt="Westlake"
+              loading="lazy"
+            >
+            <img
+              src="assets/brand-unigrip.png"
+              alt="Unigrip"
+              loading="lazy"
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="urunler">
+        <div class="shell">
+          <div class="section-heading">
+            <div>
+              <h2>Öne Çıkan <span>Lastikler</span></h2>
+              <p>Performans ve dayanıklılığın mükemmel dengesi.</p>
+            </div>
+            <div class="carousel-controls" aria-label="Ürün kaydırma kontrolleri">
+              <button type="button" data-track-prev="products-track" aria-label="Önceki ürünler">
+                <img src="assets/carousel-prev.svg" alt="">
+              </button>
+              <button type="button" data-track-next="products-track" aria-label="Sonraki ürünler">
+                <img src="assets/carousel-next.svg" alt="">
+              </button>
+            </div>
+          </div>
+
+          <div class="product-track" id="products-track">
+            <article class="product-card">
+              <span class="product-card__badge">Popüler!</span>
+              <div class="product-card__visual">
+                <img
+                  src="assets/product-effexsport.png"
+                  alt="Triangle Effexsport lastik"
+                  loading="lazy"
+                >
+              </div>
+              <div class="product-card__meta">
+                <span>Triangle</span>
+                <div class="product-card__swatches" aria-hidden="true">
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <h3>Effexsport</h3>
+              <dl class="product-card__stats">
+                <div>
+                  <dt>Islak zemin tutuşu</dt>
+                  <dd>A Sınıfı</dd>
+                </div>
+                <div>
+                  <dt>Gürültü seviyesi</dt>
+                  <dd>69 dB</dd>
+                </div>
+              </dl>
+              <a class="button button--ghost button--compact product-card__link" href="#iletisim">Detaylı İncele</a>
+            </article>
+
+            <article class="product-card">
+              <div class="product-card__visual">
+                <img
+                  src="assets/product-voyager.png"
+                  alt="Groundspeed Voyager GT AS lastik"
+                  loading="lazy"
+                >
+              </div>
+              <div class="product-card__meta">
+                <span>Groundspeed</span>
+              </div>
+              <h3>Voyager GT AS</h3>
+              <dl class="product-card__stats">
+                <div>
+                  <dt>Islak zemin tutuşu</dt>
+                  <dd>B Sınıfı</dd>
+                </div>
+                <div>
+                  <dt>Gürültü seviyesi</dt>
+                  <dd>74 dB</dd>
+                </div>
+              </dl>
+              <a class="button button--ghost button--compact product-card__link" href="#iletisim">Detaylı İncele</a>
+            </article>
+
+            <article class="product-card">
+              <div class="product-card__visual">
+                <img
+                  src="assets/product-effexwinter.png"
+                  alt="Triangle Effexwinter lastik"
+                  loading="lazy"
+                >
+              </div>
+              <div class="product-card__meta">
+                <span>Triangle</span>
+              </div>
+              <h3>Effexwinter</h3>
+              <dl class="product-card__stats">
+                <div>
+                  <dt>Islak zemin tutuşu</dt>
+                  <dd>A Sınıfı</dd>
+                </div>
+                <div>
+                  <dt>Gürültü seviyesi</dt>
+                  <dd>65 dB</dd>
+                </div>
+              </dl>
+              <a class="button button--ghost button--compact product-card__link" href="#iletisim">Detaylı İncele</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="dealer-section" id="servisler">
+        <div class="dealer-layout">
+          <div class="dealer-copy">
+            <h2>Profesyonel Hizmet <span>Erişilebilir Güvence</span></h2>
+            <p>
+              LASMAX bayi ağı, en modern teknik ekipman ve uzman kadrosuyla Türkiye'nin her noktasında
+              yüksek standartlarda hizmet sunmaktadır. Kurumsal filo çözümlerimizle işinizi yolda tutuyoruz.
+            </p>
+            <ul class="dealer-points">
+              <li>
+                <img src="assets/service-points.svg" alt="">
+                <span>100+ Yetkili Servis Noktası</span>
+              </li>
+              <li>
+                <img src="assets/service-roadside.svg" alt="">
+                <span>7/24 Yol Yardım Desteği</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="dealer-map">
+            <img
+              src="assets/dealer-map.svg"
+              alt="Lasmax bayi ağının Türkiye geneline yayılım haritası"
+              loading="lazy"
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="iletisim">
+      <div class="footer-shell">
+        <div class="footer__top">
+          <div class="footer__brand">
+            <img src="assets/logo-footer-home.svg" alt="Lasmax">
+            <p>
+              Lasmax, 2013 yılında Konlas Otomotiv bünyesi altında kurulan bayilik sistemleri bütünüdür.
+              Tüm hakları saklıdır.
+            </p>
+          </div>
+
+          <div class="footer__links">
+            <div class="footer__column">
+              <h3>Kurumsal</h3>
+              <nav aria-label="Kurumsal linkler">
+                <a href="about.html">Hakkımızda</a>
+                <a href="#servisler">Destek</a>
+              </nav>
+            </div>
+
+            <div class="footer__column">
+              <h3>İletişim</h3>
+              <div class="footer__contact">
+                <a href="#">B2B Portalı</a>
+                <a href="about.html#iletisim">Bize Ulaşın</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer__column">
+            <h3>Sosyal Medya</h3>
+            <div class="footer__social">
+              <a href="#" aria-label="X hesabı">
+                <img src="assets/social-x.svg" alt="">
+              </a>
+              <a href="#" aria-label="Instagram hesabı">
+                <img src="assets/social-instagram.svg" alt="">
+              </a>
+              <a href="#" aria-label="YouTube hesabı">
+                <img src="assets/social-youtube.svg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__bottom">© 2026 Lasmax</div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
