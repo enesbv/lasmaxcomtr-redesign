@@ -1471,18 +1471,23 @@ body.nav-open .menu-toggle span:nth-child(3) {
 }
 
 .premium-card__logo {
-  font-family: 'Space Grotesk', sans-serif;
-  font-size: 24px;
-  font-weight: 800;
-  color: #fff;
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
+  height: 32px;
+  max-width: 140px;
+  display: flex;
+  align-items: center;
 }
 
-.premium-card__number {
-  font-family: 'Space Grotesk', sans-serif;
-  font-size: 20px;
-  font-weight: 700;
+.premium-card__brand-img {
+  height: 100%;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  filter: grayscale(1) brightness(0.7) opacity(0.6);
+  transition: filter 0.3s ease;
+}
+
+.premium-card:hover .premium-card__brand-img {
+  filter: grayscale(0) brightness(1) opacity(1);
 }
 
 .premium-card__visual {
@@ -1528,6 +1533,16 @@ body.nav-open .menu-toggle span:nth-child(3) {
   justify-content: center;
 }
 
+.premium-brands__actions .button--ghost {
+  border-color: #febb06;
+  color: #febb06;
+}
+
+.premium-brands__actions .button--ghost:hover {
+  background-color: #febb06;
+  color: #000;
+}
+
 .button--arrow {
   display: inline-flex;
   align-items: center;
@@ -1535,7 +1550,7 @@ body.nav-open .menu-toggle span:nth-child(3) {
 }
 
 .button--arrow::after {
-  content: "â†’";
+  content: "\2192";
   font-size: 1.2em;
   transition: transform 0.2s ease;
 }
