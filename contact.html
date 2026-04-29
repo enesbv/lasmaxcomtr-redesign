@@ -1,332 +1,370 @@
 <!doctype html>
 <html lang="tr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>İletişim - LASMAX</title>
-    <meta
-      name="description"
-      content="Lasmax iletişim bilgileri, merkez ofis ve İstanbul ofis adresleri."
-    >
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    >
 
-    
-    <!-- Existing Styles -->
-    <link rel="stylesheet" href="styles.css">
-    
-    <!-- Tailwind for Snippet Content -->
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "primary": "#ffcd69",
-                        "primary-container": "#febb06",
-                        "on-primary": "#604400",
-                        "background": "#0e0e0e",
-                        "surface": "#0e0e0e",
-                        "on-surface": "#ffffff",
-                        "on-surface-variant": "#adaaaa",
-                        "outline-variant": "#484848",
-                        "surface-container-low": "#131313",
-                        "surface-container-highest": "#262626",
-                        "surface-container-lowest": "#000000",
-                        "surface-variant": "#262626",
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.125rem",
-                        "lg": "0.25rem",
-                        "xl": "0.5rem",
-                        "full": "0.75rem"
-                    },
-                    "fontFamily": {
-                        "headline": ["Space Grotesk", "sans-serif"],
-                        "display": ["Space Grotesk", "sans-serif"],
-                        "body": ["Inter", "sans-serif"],
-                        "label": ["Inter", "sans-serif"]
-                    }
-                }
-            }
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>İletişim - LASMAX</title>
+  <meta name="description" content="Lasmax iletişim bilgileri, merkez ofis ve İstanbul ofis adresleri.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;700;900&display=swap"
+    rel="stylesheet">
+
+
+  <!-- Existing Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Tailwind for Snippet Content -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "primary": "#ffcd69",
+            "primary-container": "#febb06",
+            "on-primary": "#604400",
+            "background": "#0e0e0e",
+            "surface": "#0e0e0e",
+            "on-surface": "#ffffff",
+            "on-surface-variant": "#adaaaa",
+            "outline-variant": "#484848",
+            "surface-container-low": "#131313",
+            "surface-container-highest": "#262626",
+            "surface-container-lowest": "#000000",
+            "surface-variant": "#262626",
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "fontFamily": {
+            "headline": ["Space Grotesk", "sans-serif"],
+            "display": ["Space Grotesk", "sans-serif"],
+            "body": ["Inter", "sans-serif"],
+            "label": ["Inter", "sans-serif"]
+          }
         }
-    </script>
-    <style>
-        .noise-bg {
-            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
-        }
-        /* Fix for potential Tailwind conflict with project header */
-        .site-header { z-index: 100 !important; }
-    </style>
-  </head>
-  <body class="bg-background text-on-surface font-body antialiased">
-    <header class="site-header">
-      <div class="site-header__inner">
-        <a class="brand" href="index.html" aria-label="Lasmax anasayfa">
-          <img src="assets/logo-main.svg" alt="Lasmax">
-        </a>
+      }
+    }
+  </script>
+  <style>
+    .noise-bg {
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
+    }
 
-        <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Menüyü aç" data-menu-toggle>
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+    /* Fix for potential Tailwind conflict with project header */
+    .site-header {
+      z-index: 100 !important;
+    }
+  </style>
+</head>
 
-        <nav class="site-nav" aria-label="Ana menü" data-menu>
-          <a class="site-nav__link" href="index.html">Ana Sayfa</a>
-          <a class="site-nav__link" href="index.html#markalar">Markalar</a>
-          <a class="site-nav__link" href="about.html">Hakkımızda</a>
-          <a class="site-nav__link is-active" href="contact.html">Bize Ulaşın</a>
-        </nav>
+<body class="bg-background text-on-surface font-body antialiased">
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="index.html" aria-label="Lasmax anasayfa">
+        <img src="assets/logo-main.svg" alt="Lasmax">
+      </a>
 
-        <a class="labis-link" href="https://www.lasmaxbayi.com" target="_blank" rel="noopener noreferrer" aria-label="LABİS girişi">
-          <img src="assets/labis.png" alt="LABİS">
-        </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Menüyü aç" data-menu-toggle>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" aria-label="Ana menü" data-menu>
+        <a class="site-nav__link" href="index.html">Ana Sayfa</a>
+        <a class="site-nav__link" href="index.html#markalar">Markalar</a>
+        <a class="site-nav__link" href="about.html">Hakkımızda</a>
+        <a class="site-nav__link is-active" href="contact.html">Bize Ulaşın</a>
+      </nav>
+
+      <a class="labis-link" href="https://www.lasmaxbayi.com" target="_blank" rel="noopener noreferrer"
+        aria-label="LABİS girişi">
+        <img src="assets/labis.png" alt="LABİS">
+      </a>
+    </div>
+  </header>
+
+  <main class="pt-[72px]">
+    <!-- Hero Section -->
+    <section
+      class="relative w-full h-[614px] min-h-[500px] flex items-center bg-surface-container-lowest overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <img alt="Warehouse Background" class="w-full h-full object-cover opacity-30 grayscale mix-blend-luminosity"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGKu4ojEmRTEwBj8FRAuDBgCrYITJn0MdXfwpd0H1odbAjYkXNHgBSHKN7UV32vXZig6t6zAybSw5MXZWOq0vC7Lj2lLvc0iJabov4Eu7ReXo2xh3snHmZt_XUDwYgrCBGJtoGDtUBWkHeSxU2u8Ruif4XGMfzeRNgY3qJcUFC3xYCI6HeTQgty6d94HugZPpXzF3hXFZGbV1DRQ62UZQlT356VTopkXCpVx6RFQfJ_Wgqovw2WoTTyVCdOziPhNk2Or17ugkyP7w" />
+        <div class="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent"></div>
+        <div class="absolute inset-0 noise-bg"></div>
       </div>
-    </header>
-
-    <main class="pt-[72px]">
-      <!-- Hero Section -->
-      <section class="relative w-full h-[614px] min-h-[500px] flex items-center bg-surface-container-lowest overflow-hidden">
-        <div class="absolute inset-0 z-0">
-          <img alt="Warehouse Background" class="w-full h-full object-cover opacity-30 grayscale mix-blend-luminosity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGKu4ojEmRTEwBj8FRAuDBgCrYITJn0MdXfwpd0H1odbAjYkXNHgBSHKN7UV32vXZig6t6zAybSw5MXZWOq0vC7Lj2lLvc0iJabov4Eu7ReXo2xh3snHmZt_XUDwYgrCBGJtoGDtUBWkHeSxU2u8Ruif4XGMfzeRNgY3qJcUFC3xYCI6HeTQgty6d94HugZPpXzF3hXFZGbV1DRQ62UZQlT356VTopkXCpVx6RFQfJ_Wgqovw2WoTTyVCdOziPhNk2Or17ugkyP7w"/>
-          <div class="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent"></div>
-          <div class="absolute inset-0 noise-bg"></div>
+      <div class="relative z-10 w-full max-w-screen-2xl mx-auto px-8 md:px-16">
+        <div class="max-w-3xl">
+          <h1
+            class="font-display text-[4rem] md:text-[5.5rem] font-bold leading-none tracking-tighter text-on-surface mb-6 uppercase">
+            BİZE <br />
+            <span class="text-primary">ULAŞIN</span>
+          </h1>
+          <p class="font-body text-xl text-on-surface-variant leading-relaxed max-w-xl">
+            Endüstriyel lastik çözümleri ve performans odaklı dağıtım ağımız hakkında bilgi almak için uzman ekibimizle
+            iletişime geçin.
+          </p>
         </div>
-        <div class="relative z-10 w-full max-w-screen-2xl mx-auto px-8 md:px-16">
-          <div class="max-w-3xl">
-            <h1 class="font-display text-[4rem] md:text-[5.5rem] font-bold leading-none tracking-tighter text-on-surface mb-6 uppercase">
-              BİZE <br/>
-              <span class="text-primary">ULAŞIN</span>
-            </h1>
-            <p class="font-body text-xl text-on-surface-variant leading-relaxed max-w-xl">
-              Endüstriyel lastik çözümleri ve performans odaklı dağıtım ağımız hakkında bilgi almak için uzman ekibimizle iletişime geçin.
-            </p>
-          </div>
-        </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Office Information Section -->
-      <section class="pt-24 pb-16 px-8 md:px-16 w-full max-w-screen-2xl mx-auto bg-background relative">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16">
-          <!-- Merkez Ofis -->
+    <!-- Office Information Section -->
+    <section class="pt-24 pb-16 px-8 md:px-16 w-full max-w-screen-2xl mx-auto bg-background relative">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16">
+        <!-- Merkez Ofis -->
+        <div class="space-y-8">
+          <h2 class="font-display text-3xl font-bold tracking-tight mb-8 uppercase">Merkez Ofis</h2>
           <div class="space-y-8">
-            <h2 class="font-display text-3xl font-bold tracking-tight mb-8 uppercase">Merkez Ofis</h2>
-            <div class="space-y-8">
-              <div class="flex items-start gap-4 group">
-                <div class="w-10 h-10 shrink-0 bg-surface-container-highest flex items-center justify-center border border-outline-variant/15 group-hover:border-primary/50 transition-colors">
-                  <img src="assets/contact-location.svg" alt="" class="w-6 h-6">
-                </div>
-                <div>
-                  <h3 class="font-headline text-sm font-bold mb-1 uppercase tracking-wider">Adres</h3>
-                  <p class="font-body text-sm text-on-surface-variant leading-relaxed">
-                    Endüstriyel Bölge 4. Cadde No: 12<br/>
-                    34000 İstanbul, Türkiye
-                  </p>
-                </div>
-              </div>
-              <div class="flex items-start gap-4 group">
-                <div class="w-10 h-10 shrink-0 bg-surface-container-highest flex items-center justify-center border border-outline-variant/15 group-hover:border-primary/50 transition-colors">
-                  <img src="assets/contact-phone.svg" alt="" class="w-6 h-6">
-                </div>
-                <div>
-                  <h3 class="font-headline text-sm font-bold mb-1 uppercase tracking-wider">Telefon</h3>
-                  <p class="font-body text-sm text-on-surface-variant leading-relaxed">
-                    +90 (212) 555 01 23<br/>
-                    +90 (212) 555 01 24
-                  </p>
-                </div>
-              </div>
-              <div class="flex items-start gap-4 group">
-                <div class="w-10 h-10 shrink-0 bg-surface-container-highest flex items-center justify-center border border-outline-variant/15 group-hover:border-primary/50 transition-colors">
-                  <img src="assets/contact-mail.svg" alt="" class="w-6 h-6">
-                </div>
-                <div>
-                  <h3 class="font-headline text-sm font-bold mb-1 uppercase tracking-wider">E-Posta</h3>
-                  <p class="font-body text-sm text-on-surface-variant leading-relaxed">
-                    info@lasmax.com.tr<br/>
-                    destek@lasmax.com.tr
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- İstanbul Ofis -->
-          <div class="space-y-8">
-            <h2 class="font-display text-3xl font-bold tracking-tight mb-8 uppercase">İstanbul Ofis</h2>
-            <div class="space-y-8">
-              <div class="flex items-start gap-4 group">
-                <div class="w-10 h-10 shrink-0 bg-surface-container-highest flex items-center justify-center border border-outline-variant/15 group-hover:border-primary/50 transition-colors">
-                  <img src="assets/contact-location.svg" alt="" class="w-6 h-6">
-                </div>
-                <div>
-                  <h3 class="font-headline text-sm font-bold mb-1 uppercase tracking-wider">Adres</h3>
-                  <p class="font-body text-sm text-on-surface-variant leading-relaxed">
-                    Plaza Center Kat: 15,<br/> Levent, İstanbul, Türkiye
-                  </p>
-                </div>
-              </div>
-              <div class="flex items-start gap-4 group">
-                <div class="w-10 h-10 shrink-0 bg-surface-container-highest flex items-center justify-center border border-outline-variant/15 group-hover:border-primary/50 transition-colors">
-                  <img src="assets/contact-phone.svg" alt="" class="w-6 h-6">
-                </div>
-                <div>
-                  <h3 class="font-headline text-sm font-bold mb-1 uppercase tracking-wider">Telefon</h3>
-                  <p class="font-body text-sm text-on-surface-variant leading-relaxed">
-                    +90 (212) 666 01 00
-                  </p>
-                </div>
-              </div>
-              <div class="flex items-start gap-4 group">
-                <div class="w-10 h-10 shrink-0 bg-surface-container-highest flex items-center justify-center border border-outline-variant/15 group-hover:border-primary/50 transition-colors">
-                  <img src="assets/contact-mail.svg" alt="" class="w-6 h-6">
-                </div>
-                <div>
-                  <h3 class="font-headline text-sm font-bold mb-1 uppercase tracking-wider">E-Posta</h3>
-                  <p class="font-body text-sm text-on-surface-variant leading-relaxed">
-                    istanbul@lasmax.com.tr
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- HUD Element - Operasyonel Saatler -->
-          <div class="bg-surface-variant/70 backdrop-blur-[20px] p-8 border border-outline-variant/15 flex flex-col justify-center mt-8 lg:mt-0">
-            <h4 class="font-headline text-sm font-bold uppercase tracking-widest text-on-surface-variant mb-8">Operasyonel Saatler</h4>
-            <div class="flex flex-col gap-8">
-              <div>
-                <span class="font-body text-xs text-on-surface-variant block mb-2">HAFTA İÇİ</span>
-                <span class="font-display text-3xl font-bold text-primary">08:00 - 18:00</span>
+            <div class="flex items-start gap-4 group">
+              <div
+                class="w-10 h-10 shrink-0 bg-surface-container-highest flex items-center justify-center border border-outline-variant/15 group-hover:border-primary/50 transition-colors">
+                <img src="assets/contact-location.svg" alt="" class="w-6 h-6">
               </div>
               <div>
-                <span class="font-body text-xs text-on-surface-variant block mb-2">CUMARTESİ</span>
-                <span class="font-display text-3xl font-bold text-primary">09:00 - 14:00</span>
+                <h3 class="font-headline text-sm font-bold mb-1 uppercase tracking-wider">Adres</h3>
+                <p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                  Fevziçakmak, Ankara Cd. No:208 D:101,<br />
+                  42050 Karatay/Konya
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4 group">
+              <div
+                class="w-10 h-10 shrink-0 bg-surface-container-highest flex items-center justify-center border border-outline-variant/15 group-hover:border-primary/50 transition-colors">
+                <img src="assets/contact-phone.svg" alt="" class="w-6 h-6">
+              </div>
+              <div>
+                <h3 class="font-headline text-sm font-bold mb-1 uppercase tracking-wider">Telefon</h3>
+                <p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                  0332 342 47 47<br />
+                  0332 342 47 37
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4 group">
+              <div
+                class="w-10 h-10 shrink-0 bg-surface-container-highest flex items-center justify-center border border-outline-variant/15 group-hover:border-primary/50 transition-colors">
+                <img src="assets/contact-mail.svg" alt="" class="w-6 h-6">
+              </div>
+              <div>
+                <h3 class="font-headline text-sm font-bold mb-1 uppercase tracking-wider">E-Posta</h3>
+                <p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                  bilgi@lasmax.com.tr<br />
+                </p>
               </div>
             </div>
           </div>
         </div>
-      </section>
-
-      <!-- Contact Form Section -->
-      <section class="pb-24 px-8 md:px-16 w-full max-w-screen-2xl mx-auto bg-background relative">
-        <div class="bg-surface-container-low p-8 md:p-12 relative overflow-hidden max-w-4xl mx-auto border border-outline-variant/10 shadow-2xl">
-          <div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 blur-[100px]"></div>
-          <h2 class="font-display text-3xl font-bold tracking-tight mb-8">MESAJ GÖNDER</h2>
-          <form class="space-y-8 relative z-10">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div class="flex flex-col relative group">
-                <label class="font-label text-xs uppercase tracking-wider text-on-surface-variant mb-2" for="name">Ad Soyad</label>
-                <input class="bg-transparent border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 px-0 py-3 text-on-surface font-body transition-colors" id="name" name="name" type="text"/>
+        <!-- İstanbul Ofis -->
+        <div class="space-y-8">
+          <h2 class="font-display text-3xl font-bold tracking-tight mb-8 uppercase">İstanbul Ofis</h2>
+          <div class="space-y-8">
+            <div class="flex items-start gap-4 group">
+              <div
+                class="w-10 h-10 shrink-0 bg-surface-container-highest flex items-center justify-center border border-outline-variant/15 group-hover:border-primary/50 transition-colors">
+                <img src="assets/contact-location.svg" alt="" class="w-6 h-6">
               </div>
-              <div class="flex flex-col relative group">
-                <label class="font-label text-xs uppercase tracking-wider text-on-surface-variant mb-2" for="company">Firma Adı</label>
-                <input class="bg-transparent border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 px-0 py-3 text-on-surface font-body transition-colors" id="company" name="company" type="text"/>
+              <div>
+                <h3 class="font-headline text-sm font-bold mb-1 uppercase tracking-wider">Adres</h3>
+                <p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                  Ağaoğlu Maslak 1453 T4 A Blok No:176<br /> Sarıyer, İstanbul, Türkiye
+                </p>
               </div>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div class="flex flex-col relative group">
-                <label class="font-label text-xs uppercase tracking-wider text-on-surface-variant mb-2" for="email">E-Posta</label>
-                <input class="bg-transparent border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 px-0 py-3 text-on-surface font-body transition-colors" id="email" name="email" type="email"/>
+            <div class="flex items-start gap-4 group">
+              <div
+                class="w-10 h-10 shrink-0 bg-surface-container-highest flex items-center justify-center border border-outline-variant/15 group-hover:border-primary/50 transition-colors">
+                <img src="assets/contact-phone.svg" alt="" class="w-6 h-6">
               </div>
-              <div class="flex flex-col relative group">
-                <label class="font-label text-xs uppercase tracking-wider text-on-surface-variant mb-2" for="phone">Telefon</label>
-                <input class="bg-transparent border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 px-0 py-3 text-on-surface font-body transition-colors" id="phone" name="phone" type="tel"/>
+              <div>
+                <h3 class="font-headline text-sm font-bold mb-1 uppercase tracking-wider">Telefon</h3>
+                <p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                  0212 465 5 465
+                </p>
               </div>
+            </div>
+            <div class="flex items-start gap-4 group">
+              <div
+                class="w-10 h-10 shrink-0 bg-surface-container-highest flex items-center justify-center border border-outline-variant/15 group-hover:border-primary/50 transition-colors">
+                <img src="assets/contact-mail.svg" alt="" class="w-6 h-6">
+              </div>
+              <div>
+                <h3 class="font-headline text-sm font-bold mb-1 uppercase tracking-wider">E-Posta</h3>
+                <p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                  marmara@lasmax.com.tr
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- HUD Element - Operasyonel Saatler -->
+        <div
+          class="bg-surface-variant/70 backdrop-blur-[20px] p-8 border border-outline-variant/15 flex flex-col justify-center mt-8 lg:mt-0">
+          <h4 class="font-headline text-sm font-bold uppercase tracking-widest text-on-surface-variant mb-8">Operasyonel
+            Saatler</h4>
+          <div class="flex flex-col gap-8">
+            <div>
+              <span class="font-body text-xs text-on-surface-variant block mb-2">HAFTA İÇİ</span>
+              <span class="font-display text-3xl font-bold text-primary">08:30 - 18:00</span>
+            </div>
+            <div>
+              <span class="font-body text-xs text-on-surface-variant block mb-2">CUMARTESİ</span>
+              <span class="font-display text-3xl font-bold text-primary">08:30 - 13:00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="pb-24 px-8 md:px-16 w-full max-w-screen-2xl mx-auto bg-background relative">
+      <div
+        class="bg-surface-container-low p-8 md:p-12 relative overflow-hidden max-w-4xl mx-auto border border-outline-variant/10 shadow-2xl">
+        <div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 blur-[100px]"></div>
+        <h2 class="font-display text-3xl font-bold tracking-tight mb-8">MESAJ GÖNDER</h2>
+        <form class="space-y-8 relative z-10">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="flex flex-col relative group">
+              <label class="font-label text-xs uppercase tracking-wider text-on-surface-variant mb-2" for="name">Ad
+                Soyad</label>
+              <input
+                class="bg-transparent border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 px-0 py-3 text-on-surface font-body transition-colors"
+                id="name" name="name" type="text" />
             </div>
             <div class="flex flex-col relative group">
-              <label class="font-label text-xs uppercase tracking-wider text-on-surface-variant mb-2" for="subject">Konu</label>
-              <select class="bg-transparent border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 px-0 py-3 text-on-surface font-body transition-colors appearance-none" id="subject" name="subject">
-                <option class="bg-surface-container-highest" value="">Lütfen Seçiniz</option>
-                <option class="bg-surface-container-highest" value="sales">Satış &amp; Teklif</option>
-                <option class="bg-surface-container-highest" value="support">Teknik Destek</option>
-                <option class="bg-surface-container-highest" value="fleet">Filo Hizmetleri</option>
-                <option class="bg-surface-container-highest" value="other">Diğer</option>
-              </select>
+              <label class="font-label text-xs uppercase tracking-wider text-on-surface-variant mb-2"
+                for="company">Firma Adı</label>
+              <input
+                class="bg-transparent border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 px-0 py-3 text-on-surface font-body transition-colors"
+                id="company" name="company" type="text" />
+            </div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="flex flex-col relative group">
+              <label class="font-label text-xs uppercase tracking-wider text-on-surface-variant mb-2"
+                for="email">E-Posta</label>
+              <input
+                class="bg-transparent border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 px-0 py-3 text-on-surface font-body transition-colors"
+                id="email" name="email" type="email" />
             </div>
             <div class="flex flex-col relative group">
-              <label class="font-label text-xs uppercase tracking-wider text-on-surface-variant mb-2" for="message">Mesajınız</label>
-              <textarea class="bg-transparent border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 px-0 py-3 text-on-surface font-body transition-colors resize-none" id="message" name="message" rows="4"></textarea>
+              <label class="font-label text-xs uppercase tracking-wider text-on-surface-variant mb-2"
+                for="phone">Telefon</label>
+              <input
+                class="bg-transparent border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 px-0 py-3 text-on-surface font-body transition-colors"
+                id="phone" name="phone" type="tel" />
             </div>
-            <button class="w-full bg-gradient-to-br from-primary to-primary-container text-on-primary font-headline font-bold py-5 px-8 rounded-sm hover:brightness-110 transition-all flex items-center justify-between group" type="submit">
-              <span class="tracking-wide uppercase">Talebi Gönder</span>
-              <img src="assets/arrow-primary.svg" alt="" class="w-5 h-5 brightness-0 invert transform group-hover:translate-x-1 transition-transform">
-            </button>
-          </form>
-        </div>
-      </section>
-
-      <!-- Map Section -->
-      <section class="w-full h-[500px] bg-surface-container-lowest relative border-t border-outline-variant/10">
-        <div class="absolute inset-0 w-full h-full bg-surface-container-low">
-          <img alt="Location Map" class="w-full h-full object-cover opacity-40 grayscale contrast-125 mix-blend-screen" src="assets/contact-map.png"/>
-          <div class="absolute inset-0 bg-background/50"></div>
-        </div>
-        <!-- Map Marker / Target -->
-        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
-          <div class="w-16 h-16 rounded-full border-2 border-primary flex items-center justify-center animate-[pulse_3s_ease-in-out_infinite] bg-primary/10 backdrop-blur-sm">
-            <div class="w-3 h-3 rounded-full bg-primary shadow-[0_0_15px_rgba(255,205,105,1)]"></div>
           </div>
-          <div class="mt-4 bg-surface-container-highest px-4 py-2 border border-outline-variant/30 backdrop-blur-md">
-            <span class="font-headline font-bold text-sm tracking-wider text-on-surface">İSTANBUL MERKEZ</span>
+          <div class="flex flex-col relative group">
+            <label class="font-label text-xs uppercase tracking-wider text-on-surface-variant mb-2"
+              for="subject">Konu</label>
+            <select
+              class="bg-transparent border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 px-0 py-3 text-on-surface font-body transition-colors appearance-none"
+              id="subject" name="subject">
+              <option class="bg-surface-container-highest" value="">Lütfen Seçiniz</option>
+              <option class="bg-surface-container-highest" value="sales">Satış &amp; Teklif</option>
+              <option class="bg-surface-container-highest" value="support">Teknik Destek</option>
+              <option class="bg-surface-container-highest" value="fleet">Filo Hizmetleri</option>
+              <option class="bg-surface-container-highest" value="other">Diğer</option>
+            </select>
           </div>
+          <div class="flex flex-col relative group">
+            <label class="font-label text-xs uppercase tracking-wider text-on-surface-variant mb-2"
+              for="message">Mesajınız</label>
+            <textarea
+              class="bg-transparent border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 px-0 py-3 text-on-surface font-body transition-colors resize-none"
+              id="message" name="message" rows="4"></textarea>
+          </div>
+          <button
+            class="w-full bg-gradient-to-br from-primary to-primary-container text-on-primary font-headline font-bold py-5 px-8 rounded-sm hover:brightness-110 transition-all flex items-center justify-between group"
+            type="submit">
+            <span class="tracking-wide uppercase">Talebi Gönder</span>
+            <img src="assets/arrow-primary.svg" alt=""
+              class="w-5 h-5 brightness-0 invert transform group-hover:translate-x-1 transition-transform">
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="w-full h-[500px] bg-surface-container-lowest relative border-t border-outline-variant/10">
+      <div class="absolute inset-0 w-full h-full bg-surface-container-low">
+        <img alt="Location Map" class="w-full h-full object-cover opacity-40 grayscale contrast-125 mix-blend-screen"
+          src="assets/contact-map.png" />
+        <div class="absolute inset-0 bg-background/50"></div>
+      </div>
+      <!-- Map Marker / Target -->
+      <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
+        <div
+          class="w-16 h-16 rounded-full border-2 border-primary flex items-center justify-center animate-[pulse_3s_ease-in-out_infinite] bg-primary/10 backdrop-blur-sm">
+          <div class="w-3 h-3 rounded-full bg-primary shadow-[0_0_15px_rgba(255,205,105,1)]"></div>
         </div>
-      </section>
-    </main>
+        <div class="mt-4 bg-surface-container-highest px-4 py-2 border border-outline-variant/30 backdrop-blur-md">
+          <span class="font-headline font-bold text-sm tracking-wider text-on-surface">İSTANBUL MERKEZ</span>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <footer class="footer" id="iletisim">
-      <div class="footer-shell">
-        <div class="footer__top">
-          <div class="footer__brand">
-            <img src="assets/logo-footer-home.svg" alt="Lasmax">
-            <p>
-              Lasmax, 2013 yılında Konlas Otomotiv bünyesi altında kurulan bayilik sistemleri bütünüdür.
-              Tüm hakları saklıdır.
-            </p>
-          </div>
+  <footer class="footer" id="iletisim">
+    <div class="footer-shell">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <img src="assets/logo-footer-home.svg" alt="Lasmax">
+          <p>
+            Lasmax, 2013 yılında Konlas Otomotiv bünyesi altında kurulan bayilik sistemleri bütünüdür.
+            Tüm hakları saklıdır.
+          </p>
+        </div>
 
-          <div class="footer__links">
-            <div class="footer__column">
-              <h3>Kurumsal</h3>
-              <nav aria-label="Kurumsal linkler">
-                <a href="about.html">Hakkımızda</a>
-                <a href="index.html#servisler">Destek</a>
-              </nav>
-            </div>
-
-            <div class="footer__column">
-              <h3>İletişim</h3>
-              <div class="footer__contact">
-                <a href="#">B2B Portalı</a>
-                <a href="contact.html">Bize Ulaşın</a>
-              </div>
-            </div>
+        <div class="footer__links">
+          <div class="footer__column">
+            <h3>Kurumsal</h3>
+            <nav aria-label="Kurumsal linkler">
+              <a href="about.html">Hakkımızda</a>
+              <a href="index.html#servisler">Destek</a>
+            </nav>
           </div>
 
           <div class="footer__column">
-            <h3>Sosyal Medya</h3>
-            <div class="footer__social">
-              <a href="#" aria-label="X hesabı">
-                <img src="assets/social-x.svg" alt="">
-              </a>
-              <a href="#" aria-label="Instagram hesabı">
-                <img src="assets/social-instagram.svg" alt="">
-              </a>
-              <a href="#" aria-label="YouTube hesabı">
-                <img src="assets/social-youtube.svg" alt="">
-              </a>
+            <h3>İletişim</h3>
+            <div class="footer__contact">
+              <a href="#">B2B Portalı</a>
+              <a href="contact.html">Bize Ulaşın</a>
             </div>
           </div>
         </div>
 
-        <div class="footer__bottom">© 2026 Lasmax</div>
+        <div class="footer__column">
+          <h3>Sosyal Medya</h3>
+          <div class="footer__social">
+            <a href="#" aria-label="X hesabı">
+              <img src="assets/social-x.svg" alt="">
+            </a>
+            <a href="#" aria-label="Instagram hesabı">
+              <img src="assets/social-instagram.svg" alt="">
+            </a>
+            <a href="#" aria-label="YouTube hesabı">
+              <img src="assets/social-youtube.svg" alt="">
+            </a>
+          </div>
+        </div>
       </div>
-    </footer>
 
-    <script src="script.js"></script>
-  </body>
+      <div class="footer__bottom">© 2026 Lasmax</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
