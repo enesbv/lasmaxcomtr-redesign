@@ -8,7 +8,7 @@
   --text-soft: #868686;
   --line: rgba(72, 72, 72, 0.22);
   --line-strong: #484848;
-  --accent: #ffcd69;
+  --accent: #febb06;
   --accent-strong: #febb06;
   --accent-text: #604400;
   --brand-purple: #464093;
@@ -1371,7 +1371,7 @@ body.nav-open .menu-toggle span:nth-child(3) {
 }
 
 .premium-brands__title span {
-  color: var(--accent, #FFCD69);
+  color: var(--accent, #febb06);
   display: block;
 }
 
@@ -1535,7 +1535,7 @@ body.nav-open .menu-toggle span:nth-child(3) {
 }
 
 .button--arrow::after {
-  content: "→";
+  content: "â†’";
   font-size: 1.2em;
   transition: transform 0.2s ease;
 }

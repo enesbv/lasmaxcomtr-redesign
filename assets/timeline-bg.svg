@@ -3,39 +3,39 @@
 <g id="Group 3">
 <g id="Vector" opacity="0.3">
 <path d="M394.835 353.759L528.11 487.034L394.835 353.759" fill="var(--fill-0, black)"/>
-<path d="M394.835 353.759L528.11 487.034L394.835 353.759" stroke="var(--stroke-0, #FFCD69)" stroke-width="7.07517" stroke-dasharray="28.3"/>
+<path d="M394.835 353.759L528.11 487.034L394.835 353.759" stroke="var(--stroke-0, #febb06)" stroke-width="7.07517" stroke-dasharray="28.3"/>
 </g>
 <g id="Vector_2" opacity="0.3">
 <path d="M418.377 353.759H606.857H418.377" fill="var(--fill-0, black)"/>
-<path d="M418.377 353.759H606.857H418.377" stroke="var(--stroke-0, #FFCD69)" stroke-width="7.07517" stroke-dasharray="28.3"/>
+<path d="M418.377 353.759H606.857H418.377" stroke="var(--stroke-0, #febb06)" stroke-width="7.07517" stroke-dasharray="28.3"/>
 </g>
 <g id="Vector_3" opacity="0.3">
 <path d="M394.835 296.924L528.11 163.649L394.835 296.924" fill="var(--fill-0, black)"/>
-<path d="M394.835 296.924L528.11 163.649L394.835 296.924" stroke="var(--stroke-0, #FFCD69)" stroke-width="7.07517" stroke-dasharray="28.3"/>
+<path d="M394.835 296.924L528.11 163.649L394.835 296.924" stroke="var(--stroke-0, #febb06)" stroke-width="7.07517" stroke-dasharray="28.3"/>
 </g>
 </g>
 <g id="Vector_4" opacity="0.3">
 <path d="M353.759 273.382V84.9021V273.382" fill="var(--fill-0, black)"/>
-<path d="M353.759 273.382V84.9021V273.382" stroke="var(--stroke-0, #FFCD69)" stroke-width="7.07517" stroke-dasharray="28.3"/>
+<path d="M353.759 273.382V84.9021V273.382" stroke="var(--stroke-0, #febb06)" stroke-width="7.07517" stroke-dasharray="28.3"/>
 </g>
 <g id="Vector_5" opacity="0.3">
 <path d="M358 386V574.48V386" fill="var(--fill-0, black)"/>
-<path d="M358 386V574.48V386" stroke="var(--stroke-0, #FFCD69)" stroke-width="7.07517" stroke-dasharray="28.3"/>
+<path d="M358 386V574.48V386" stroke="var(--stroke-0, #febb06)" stroke-width="7.07517" stroke-dasharray="28.3"/>
 </g>
 <g id="Group 1">
 <g id="Vector_6" opacity="0.3">
 <path d="M296.924 353.759L163.649 487.034L296.924 353.759" fill="var(--fill-0, black)"/>
-<path d="M296.924 353.759L163.649 487.034L296.924 353.759" stroke="var(--stroke-0, #FFCD69)" stroke-width="7.07517" stroke-dasharray="28.3"/>
+<path d="M296.924 353.759L163.649 487.034L296.924 353.759" stroke="var(--stroke-0, #febb06)" stroke-width="7.07517" stroke-dasharray="28.3"/>
 </g>
 <g id="Vector_7" opacity="0.3">
 <path d="M273.382 353.759H84.9021H273.382" fill="var(--fill-0, black)"/>
-<path d="M273.382 353.759H84.9021H273.382" stroke="var(--stroke-0, #FFCD69)" stroke-width="7.07517" stroke-dasharray="28.3"/>
+<path d="M273.382 353.759H84.9021H273.382" stroke="var(--stroke-0, #febb06)" stroke-width="7.07517" stroke-dasharray="28.3"/>
 </g>
 <g id="Vector_8" opacity="0.3">
 <path d="M296.924 296.924L163.649 163.649L296.924 296.924" fill="var(--fill-0, black)"/>
-<path d="M296.924 296.924L163.649 163.649L296.924 296.924" stroke="var(--stroke-0, #FFCD69)" stroke-width="7.07517" stroke-dasharray="28.3"/>
+<path d="M296.924 296.924L163.649 163.649L296.924 296.924" stroke="var(--stroke-0, #febb06)" stroke-width="7.07517" stroke-dasharray="28.3"/>
 </g>
 </g>
-<path id="Vector_9" d="M226.406 315.686C226.406 364.96 266.411 404.965 315.686 404.965C364.96 404.965 404.966 364.96 404.966 315.686C404.966 266.411 364.96 226.406 315.686 226.406C266.411 226.406 226.406 266.411 226.406 315.686V315.686" stroke="var(--stroke-0, #FFCD69)" stroke-width="3.53759" stroke-dasharray="7.08 14.15"/>
+<path id="Vector_9" d="M226.406 315.686C226.406 364.96 266.411 404.965 315.686 404.965C364.96 404.965 404.966 364.96 404.966 315.686C404.966 266.411 364.96 226.406 315.686 226.406C266.411 226.406 226.406 266.411 226.406 315.686V315.686" stroke="var(--stroke-0, #febb06)" stroke-width="3.53759" stroke-dasharray="7.08 14.15"/>
 </g>
 </svg>
