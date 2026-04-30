@@ -1354,26 +1354,6 @@ body.nav-open .menu-toggle span:nth-child(3) {
   flex: 0 0 300px;
 }
 
-.premium-brands__subtitle {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  font-family: 'Inter', sans-serif;
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 0.2em;
-  color: #888;
-  text-transform: uppercase;
-  margin-bottom: 24px;
-}
-
-.premium-brands__subtitle .line {
-  flex: 1;
-  height: 2px;
-  background-color: #febb06;
-  max-width: 40px;
-}
-
 .premium-brands__title {
   font-family: 'Space Grotesk', sans-serif;
   font-size: clamp(36px, 5vw, 48px);
@@ -1492,16 +1472,16 @@ body.nav-open .menu-toggle span:nth-child(3) {
 
 .alt-card__visual {
   position: absolute;
-  bottom: -20px;
+  top: 55%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   width: 140%;
   z-index: 0;
   transition: transform 0.5s ease;
 }
 
 .alt-card:hover .alt-card__visual {
-  transform: translateX(-50%) scale(1.05);
+  transform: translate(-50%, -50%) scale(1.05);
 }
 
 .alt-card__visual img {
@@ -1509,6 +1489,7 @@ body.nav-open .menu-toggle span:nth-child(3) {
   height: auto;
   object-fit: contain;
   filter: drop-shadow(0 20px 30px rgba(0,0,0,0.8));
+  mix-blend-mode: lighten;
 }
 
 .alt-card__number {
