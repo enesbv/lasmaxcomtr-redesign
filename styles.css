@@ -1893,12 +1893,13 @@ body.nav-open .menu-toggle span:nth-child(3) {
 .about2-milestone::before {
   content: "";
   position: absolute;
-  top: -26px;
-  left: 0;
+  top: -20px;
+  left: 27px;
   width: 14px;
   height: 14px;
   background: var(--accent);
   border-radius: 50%;
+  transform: translateX(-50%);
   box-shadow: 0 0 0 7px rgba(254, 187, 6, 0.12), 0 0 22px rgba(254, 187, 6, 0.92);
 }
 
@@ -1986,7 +1987,8 @@ body.nav-open .menu-toggle span:nth-child(3) {
   }
 
   .about2-milestone::before {
-    top: -8px;
+    top: -7px;
+    left: 27px;
   }
 }
 
