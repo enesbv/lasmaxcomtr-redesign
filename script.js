@@ -69,7 +69,7 @@ const timelineData = [
     year: "1979",
     subtitle: "Kuruluş",
     desc: "KONLAS, 1979 yılında 20 m²'lik bir alanda faaliyetlerine başlamış; sürdürülebilir büyüme anlayışıyla güçlü temeller atmıştır.",
-    img: "assets/hero-about.jpg"
+    img: "assets/sonmez-oto.jpg"
   },
   {
     year: "1989",
