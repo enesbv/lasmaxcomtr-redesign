@@ -13,6 +13,49 @@
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Tailwind for Snippet Content -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "primary": "#febb06",
+            "primary-container": "#febb06",
+            "on-primary": "#604400",
+            "background": "#0e0e0e",
+            "surface": "#0e0e0e",
+            "on-surface": "#ffffff",
+            "on-surface-variant": "#adaaaa",
+            "outline-variant": "#484848",
+            "surface-container-low": "#131313",
+            "surface-container-highest": "#262626",
+            "surface-container-lowest": "#000000",
+            "surface-variant": "#262626",
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "fontFamily": {
+            "headline": ["Space Grotesk", "sans-serif"],
+            "display": ["Space Grotesk", "sans-serif"],
+            "body": ["Inter", "sans-serif"],
+            "label": ["Inter", "sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .noise-bg {
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
+    }
+  </style>
 </head>
 
 <body class="about2-page" data-page="about">
@@ -105,7 +148,78 @@
       </div>
     </section>
 
-    <section class="story-section">
+    <!-- Interactive Timeline Section -->
+    <section class="interactive-history pt-16 pb-16 relative z-10 bg-[#151413] noise-bg overflow-hidden min-h-[80vh] flex flex-col justify-center">
+      <!-- Blurred Background Image -->
+      <img id="timeline-bg-img" src="assets/hero-about.jpg" class="absolute inset-0 w-full h-full object-cover blur-3xl scale-125 opacity-20 z-0 transition-opacity duration-500 pointer-events-none" alt="">
+      
+      <!-- Giant Background Year -->
+      <div id="timeline-bg-year" class="absolute bottom-0 left-0 text-[30vw] font-display font-bold text-white/[0.02] pointer-events-none leading-none select-none z-0 transform translate-y-1/4 -translate-x-[5%] transition-opacity duration-500">1979</div>
+
+      <div class="shell--wide text-center mb-12 relative z-10">
+        <p class="font-body text-[10px] md:text-xs text-[#a0805a] tracking-[0.3em] uppercase mb-2">GEÇMİŞTEN GÜNÜMÜZE</p>
+        <h2 class="font-display text-4xl md:text-5xl font-bold text-white">Tarihçemiz</h2>
+      </div>
+
+      <div class="shell--wide relative z-10">
+        <!-- The horizontal line with years -->
+        <div class="timeline-nav-wrapper relative w-full overflow-x-auto pb-8 snap-x snap-mandatory px-4 md:px-0">
+          <!-- The continuous line passing through -->
+          <div class="absolute top-1/2 -translate-y-1/2 left-0 right-0 h-[1px] bg-[#3a2d21] z-0"></div>
+          
+          <div class="timeline-nav flex items-center justify-between min-w-max relative z-10 gap-8 md:gap-16" id="timeline-nav-container">
+            <!-- Years -->
+            <button class="timeline-year-btn active snap-center shrink-0 w-[4.5rem] h-[4.5rem] rounded-full bg-[#151413] border border-transparent transition-all duration-500 flex items-center justify-center group" data-index="0">
+              <span class="year-text font-display text-base md:text-lg font-medium text-[#a0805a] group-hover:text-white transition-colors duration-300">1979</span>
+            </button>
+            <button class="timeline-year-btn snap-center shrink-0 w-[4.5rem] h-[4.5rem] rounded-full bg-[#151413] border border-transparent transition-all duration-500 flex items-center justify-center group" data-index="1">
+              <span class="year-text font-display text-base md:text-lg font-medium text-[#a0805a] group-hover:text-white transition-colors duration-300">1989</span>
+            </button>
+            <button class="timeline-year-btn snap-center shrink-0 w-[4.5rem] h-[4.5rem] rounded-full bg-[#151413] border border-transparent transition-all duration-500 flex items-center justify-center group" data-index="2">
+              <span class="year-text font-display text-base md:text-lg font-medium text-[#a0805a] group-hover:text-white transition-colors duration-300">1997</span>
+            </button>
+            <button class="timeline-year-btn snap-center shrink-0 w-[4.5rem] h-[4.5rem] rounded-full bg-[#151413] border border-transparent transition-all duration-500 flex items-center justify-center group" data-index="3">
+              <span class="year-text font-display text-base md:text-lg font-medium text-[#a0805a] group-hover:text-white transition-colors duration-300">1998</span>
+            </button>
+            <button class="timeline-year-btn snap-center shrink-0 w-[4.5rem] h-[4.5rem] rounded-full bg-[#151413] border border-transparent transition-all duration-500 flex items-center justify-center group" data-index="4">
+              <span class="year-text font-display text-base md:text-lg font-medium text-[#a0805a] group-hover:text-white transition-colors duration-300">2006</span>
+            </button>
+            <button class="timeline-year-btn snap-center shrink-0 w-[4.5rem] h-[4.5rem] rounded-full bg-[#151413] border border-transparent transition-all duration-500 flex items-center justify-center group" data-index="5">
+              <span class="year-text font-display text-base md:text-lg font-medium text-[#a0805a] group-hover:text-white transition-colors duration-300">2007</span>
+            </button>
+            <button class="timeline-year-btn snap-center shrink-0 w-[4.5rem] h-[4.5rem] rounded-full bg-[#151413] border border-transparent transition-all duration-500 flex items-center justify-center group" data-index="6">
+              <span class="year-text font-display text-base md:text-lg font-medium text-[#a0805a] group-hover:text-white transition-colors duration-300">2013</span>
+            </button>
+            <button class="timeline-year-btn snap-center shrink-0 w-[4.5rem] h-[4.5rem] rounded-full bg-[#151413] border border-transparent transition-all duration-500 flex items-center justify-center group" data-index="7">
+              <span class="year-text font-display text-base md:text-lg font-medium text-[#a0805a] group-hover:text-white transition-colors duration-300">2015</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- The content area -->
+        <div class="timeline-content mt-8 md:mt-16 relative">
+          <!-- Connecting Line (only desktop) -->
+          <div class="hidden md:block absolute left-[41.666%] lg:left-[41.666%] top-[20%] w-[12%] h-[1px] bg-[#a0805a] z-0 opacity-50"></div>
+
+          <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-0 items-start flex-col-reverse md:flex-row relative z-10">
+            <div class="md:col-span-6 lg:col-span-5 relative order-2 md:order-1 flex justify-center md:justify-start">
+              <!-- Image -->
+              <img id="timeline-display-img" src="assets/hero-about.jpg" alt="1979" class="w-full max-w-[500px] h-[300px] md:h-[380px] object-cover shadow-2xl transition-opacity duration-500 rounded-sm">
+            </div>
+            
+            <div class="md:col-span-5 lg:col-span-5 md:col-start-7 lg:col-start-7 order-1 md:order-2 text-center md:text-left pt-0 md:pt-4">
+              <!-- Text -->
+              <h3 id="timeline-display-title" class="font-display text-5xl md:text-7xl font-bold text-white mb-4 transition-opacity duration-500 leading-none">1979</h3>
+              <p id="timeline-display-desc" class="font-body text-base text-gray-300 leading-relaxed transition-opacity duration-500 font-light">
+                KONLAS, 1979 yılında 20 m²'lik bir alanda faaliyetlerine başlamış; sürdürülebilir büyüme anlayışıyla güçlü temeller atmıştır.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Legacy Story Section (Orbit) moved below -->
       <div class="shell--wide">
         <div class="story-layout">
           <div class="story-copy">

@@ -2075,3 +2075,33 @@ body.nav-open .menu-toggle span:nth-child(3) {
     min-height: 184px;
   }
 }
+
+/* ==========================================================================
+   INTERACTIVE TIMELINE (about.html)
+   ========================================================================== */
+
+.timeline-nav-wrapper {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.timeline-nav-wrapper::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+
+.timeline-year-btn {
+  flex-shrink: 0;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  padding: 0;
+  outline: none;
+}
+
+.timeline-year-btn.active .year-dot {
+  background-color: var(--primary);
+}
+
+.timeline-year-btn.active .year-text {
+  color: var(--primary);
+}
