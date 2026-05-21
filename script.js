@@ -118,7 +118,10 @@ const timelineData = [
 const timelineBtns = document.querySelectorAll('.timeline-year-btn');
 const displayImg = document.getElementById('timeline-display-img');
 const displayTitle = document.getElementById('timeline-display-title');
+const displaySubtitle = document.getElementById('timeline-display-subtitle');
 const displayDesc = document.getElementById('timeline-display-desc');
+const displayBadge = document.getElementById('timeline-display-badge');
+const displayProgress = document.getElementById('timeline-display-progress');
 const bgYear = document.getElementById('timeline-bg-year');
 const bgImg = document.getElementById('timeline-bg-img'); // New blurred background image
 
@@ -140,7 +143,9 @@ if (timelineBtns.length > 0 && displayImg) {
       // Fade out
       displayImg.style.opacity = 0;
       displayTitle.style.opacity = 0;
+      if (displaySubtitle) displaySubtitle.style.opacity = 0;
       displayDesc.style.opacity = 0;
+      if (displayBadge) displayBadge.style.opacity = 0;
       if (bgYear) bgYear.style.opacity = 0;
       if (bgImg) bgImg.style.opacity = 0;
 
@@ -150,18 +155,22 @@ if (timelineBtns.length > 0 && displayImg) {
         if(data.img.includes('.svg') || data.img.includes('giti') || data.img.includes('otani') || data.img.includes('groundspeed') || data.img.includes('tire')) {
             displayImg.classList.remove('object-cover');
             displayImg.classList.add('object-contain');
-            displayImg.classList.add('bg-[#1a1a1a]'); // Add a dark background to logos so they pop
-            displayImg.classList.add('p-8');
+            displayImg.classList.add('history-card__image--contained');
         } else {
             displayImg.classList.remove('object-contain');
-            displayImg.classList.remove('bg-[#1a1a1a]');
-            displayImg.classList.remove('p-8');
+            displayImg.classList.remove('history-card__image--contained');
             displayImg.classList.add('object-cover');
         }
 
         displayImg.src = data.img;
+        displayImg.alt = `${data.year} ${data.subtitle}`;
         displayTitle.textContent = data.year;
+        if (displaySubtitle) displaySubtitle.textContent = data.subtitle;
         displayDesc.textContent = data.desc;
+        if (displayBadge) displayBadge.textContent = data.subtitle;
+        if (displayProgress) {
+          displayProgress.textContent = `${String(index + 1).padStart(2, '0')} / ${String(timelineData.length).padStart(2, '0')}`;
+        }
         if (bgYear) bgYear.textContent = data.year;
         
         // Also update the blurred background image
@@ -171,7 +180,9 @@ if (timelineBtns.length > 0 && displayImg) {
 
         displayImg.style.opacity = 1;
         displayTitle.style.opacity = 1;
+        if (displaySubtitle) displaySubtitle.style.opacity = 1;
         displayDesc.style.opacity = 1;
+        if (displayBadge) displayBadge.style.opacity = 1;
         if (bgYear) bgYear.style.opacity = 1;
         if (bgImg) bgImg.style.opacity = 0.2; // Keep opacity low as set in CSS
       }, 300);

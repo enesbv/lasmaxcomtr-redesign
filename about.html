@@ -4,58 +4,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Lasmax | Hakkımızda Alternatif</title>
-  <meta name="description"
-    content="Lasmax'in hikayesini, değerlerini ve operasyon gücünü modern bir zaman çizgisiyle anlatan alternatif hakkımızda sayfası.">
+  <title>Lasmax | Hakkımızda</title>
+  <meta name="description" content="Lasmax'in yolculuğunu ve operasyon gücünü anlatan hakkımızda sayfası.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-
-  <!-- Tailwind for Snippet Content -->
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  <script id="tailwind-config">
-    tailwind.config = {
-      darkMode: "class",
-      theme: {
-        extend: {
-          "colors": {
-            "primary": "#febb06",
-            "primary-container": "#febb06",
-            "on-primary": "#604400",
-            "background": "#0e0e0e",
-            "surface": "#0e0e0e",
-            "on-surface": "#ffffff",
-            "on-surface-variant": "#adaaaa",
-            "outline-variant": "#484848",
-            "surface-container-low": "#131313",
-            "surface-container-highest": "#262626",
-            "surface-container-lowest": "#000000",
-            "surface-variant": "#262626",
-          },
-          "borderRadius": {
-            "DEFAULT": "0.125rem",
-            "lg": "0.25rem",
-            "xl": "0.5rem",
-            "full": "0.75rem"
-          },
-          "fontFamily": {
-            "headline": ["Space Grotesk", "sans-serif"],
-            "display": ["Space Grotesk", "sans-serif"],
-            "body": ["Inter", "sans-serif"],
-            "label": ["Inter", "sans-serif"]
-          }
-        }
-      }
-    }
-  </script>
-  <style>
-    .noise-bg {
-      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
-    }
-  </style>
 </head>
 
 <body class="about2-page" data-page="about">
@@ -74,7 +30,7 @@
       <nav class="site-nav" aria-label="Ana menü" data-menu>
         <a class="site-nav__link" href="index.html">Ana Sayfa</a>
         <a class="site-nav__link" href="index.html#markalar">Markalar</a>
-        <a class="site-nav__link is-active" href="about2.html">Hakkımızda</a>
+        <a class="site-nav__link is-active" href="about.html">Hakkımızda</a>
         <a class="site-nav__link" href="contact.html">Bize Ulaşın</a>
       </nav>
 
@@ -115,32 +71,28 @@
         <div class="about2-timeline" aria-label="Lasmax tarihçe">
           <article class="about2-milestone">
             <div class="about2-milestone__year">1979</div>
-            <div class="about2-milestone__media" style="background-image: url('assets/sonmez-oto.jpg');">
-            </div>
+            <div class="about2-milestone__media" style="background-image: url('assets/sonmez-oto.jpg');"></div>
             <h2>Konlas ile ilk adım</h2>
             <p>20 m²'lik bir başlangıçtan, disiplinli ticaret anlayışıyla büyüyen güçlü bir yapıya ulaşıldı.</p>
           </article>
 
           <article class="about2-milestone">
             <div class="about2-milestone__year">1997</div>
-            <div class="about2-milestone__media" style="background-image: url('assets/konlas-fuar.jpg');">
-            </div>
+            <div class="about2-milestone__media" style="background-image: url('assets/konlas-fuar.jpg');"></div>
             <h2>Global marka açılımı</h2>
             <p>Uluslararası üreticilerle kurulan ilişkiler, Türkiye pazarına güçlü lastik markaları kazandırdı.</p>
           </article>
 
           <article class="about2-milestone">
             <div class="about2-milestone__year">2013</div>
-            <div class="about2-milestone__media" style="background-image: url('assets/timeline-tire.png');">
-            </div>
+            <div class="about2-milestone__media" style="background-image: url('assets/timeline-tire.png');"></div>
             <h2>Lasmax bayi sistemi</h2>
             <p>Konlas deneyimi Lasmax çatısı altında organize bayi gücüne, standart hizmet modeline dönüştü.</p>
           </article>
 
           <article class="about2-milestone">
             <div class="about2-milestone__year">Bugün</div>
-            <div class="about2-milestone__media" style="background-image: url('assets/dealer-map.svg');">
-            </div>
+            <div class="about2-milestone__media" style="background-image: url('assets/dealer-map.svg');"></div>
             <h2>Türkiye geneli erişim</h2>
             <p>Stok, lojistik ve bayi koordinasyonuyla doğru ürünün doğru noktaya ulaşması sağlanır.</p>
           </article>
@@ -148,233 +100,198 @@
       </div>
     </section>
 
-    <!-- Interactive Timeline Section -->
-    <section
-      class="interactive-history pt-16 pb-16 relative z-10 bg-[#151413] noise-bg overflow-hidden min-h-[80vh] flex flex-col justify-center">
-      <!-- Blurred Background Image -->
-      <img id="timeline-bg-img" src="assets/sonmez-oto.jpg"
-        class="absolute inset-0 w-full h-full object-cover blur-3xl scale-125 opacity-20 z-0 transition-opacity duration-500 pointer-events-none"
-        alt="">
+    <section class="journey-timeline" id="journey-timeline">
+      <div class="journey-timeline__backdrop" aria-hidden="true"></div>
+      <div class="journey-timeline__watermark" aria-hidden="true">LASMAX</div>
 
-      <!-- Giant Background Year -->
-      <div id="timeline-bg-year"
-        class="absolute bottom-0 left-0 text-[30vw] font-display font-bold text-white/[0.02] pointer-events-none leading-none select-none z-0 transform translate-y-1/4 -translate-x-[5%] transition-opacity duration-500">
-        1979</div>
+      <div class="shell--wide journey-timeline__inner">
+        <header class="journey-timeline__header">
+          <p class="journey-timeline__eyebrow">TARİHÇE</p>
+          <h2>
+            <span class="journey-timeline__title-line">Yolculuğumuz</span>
+            <span class="journey-timeline__title-line"><span>Güçle</span> Şekillendi</span>
+          </h2>
+          <p class="journey-timeline__lede">
+            1979'dan bu yana lastik sektöründe güven, kalite ve yenilikçi çözümlerle ilerliyoruz.
+            Her kilometrede büyüyen bir başarı hikayesi yazıyoruz.
+          </p>
+        </header>
 
-      <div class="shell--wide text-center mb-12 relative z-10">
-        <p class="font-body text-[10px] md:text-xs text-[#a0805a] tracking-[0.3em] uppercase mb-2">GEÇMİŞTEN GÜNÜMÜZE
-        </p>
-        <h2 class="font-display text-4xl md:text-5xl font-bold text-white">Tarihçemiz</h2>
-      </div>
+        <div class="journey-timeline__stage">
+          <div class="journey-timeline__axis" aria-hidden="true"></div>
+          <div class="journey-timeline__axis-arrow" aria-hidden="true"></div>
 
-      <div class="shell--wide relative z-10">
-        <!-- The horizontal line with years -->
-        <div class="timeline-nav-wrapper relative w-full overflow-x-auto pb-8 snap-x snap-mandatory px-4 md:px-0">
-          <!-- The continuous line passing through -->
-          <div class="absolute top-1/2 -translate-y-1/2 left-0 right-0 h-[1px] bg-[#3a2d21] z-0"></div>
+          <article class="journey-milestone journey-milestone--top">
+            <div class="journey-milestone__card">
+              <div class="journey-milestone__media">
+                <img src="assets/sonmez-oto.jpg" alt="1979 Konlas ilk nokta">
+              </div>
+              <div class="journey-milestone__copy">
+                <span class="journey-milestone__year">1979</span>
+                <h3>İlk Adım</h3>
+                <p>Konlas, 1979 yılında küçük bir lastik bayisi olarak faaliyetlerine başladı.</p>
+              </div>
+            </div>
+            <span class="journey-milestone__connector" aria-hidden="true"></span>
+            <span class="journey-milestone__dot" aria-hidden="true"></span>
+          </article>
 
-          <div class="timeline-nav flex items-center justify-between min-w-max relative z-10 gap-8 md:gap-16"
-            id="timeline-nav-container">
-            <!-- Years -->
-            <button
-              class="timeline-year-btn active snap-center shrink-0 w-[4.5rem] h-[4.5rem] rounded-full bg-[#151413] border border-transparent transition-all duration-500 flex items-center justify-center group"
-              data-index="0">
-              <span
-                class="year-text font-display text-base md:text-lg font-medium text-[#a0805a] group-hover:text-white transition-colors duration-300">1979</span>
-            </button>
-            <button
-              class="timeline-year-btn snap-center shrink-0 w-[4.5rem] h-[4.5rem] rounded-full bg-[#151413] border border-transparent transition-all duration-500 flex items-center justify-center group"
-              data-index="1">
-              <span
-                class="year-text font-display text-base md:text-lg font-medium text-[#a0805a] group-hover:text-white transition-colors duration-300">1989</span>
-            </button>
-            <button
-              class="timeline-year-btn snap-center shrink-0 w-[4.5rem] h-[4.5rem] rounded-full bg-[#151413] border border-transparent transition-all duration-500 flex items-center justify-center group"
-              data-index="2">
-              <span
-                class="year-text font-display text-base md:text-lg font-medium text-[#a0805a] group-hover:text-white transition-colors duration-300">1997</span>
-            </button>
-            <button
-              class="timeline-year-btn snap-center shrink-0 w-[4.5rem] h-[4.5rem] rounded-full bg-[#151413] border border-transparent transition-all duration-500 flex items-center justify-center group"
-              data-index="3">
-              <span
-                class="year-text font-display text-base md:text-lg font-medium text-[#a0805a] group-hover:text-white transition-colors duration-300">1998</span>
-            </button>
-            <button
-              class="timeline-year-btn snap-center shrink-0 w-[4.5rem] h-[4.5rem] rounded-full bg-[#151413] border border-transparent transition-all duration-500 flex items-center justify-center group"
-              data-index="4">
-              <span
-                class="year-text font-display text-base md:text-lg font-medium text-[#a0805a] group-hover:text-white transition-colors duration-300">2006</span>
-            </button>
-            <button
-              class="timeline-year-btn snap-center shrink-0 w-[4.5rem] h-[4.5rem] rounded-full bg-[#151413] border border-transparent transition-all duration-500 flex items-center justify-center group"
-              data-index="5">
-              <span
-                class="year-text font-display text-base md:text-lg font-medium text-[#a0805a] group-hover:text-white transition-colors duration-300">2007</span>
-            </button>
-            <button
-              class="timeline-year-btn snap-center shrink-0 w-[4.5rem] h-[4.5rem] rounded-full bg-[#151413] border border-transparent transition-all duration-500 flex items-center justify-center group"
-              data-index="6">
-              <span
-                class="year-text font-display text-base md:text-lg font-medium text-[#a0805a] group-hover:text-white transition-colors duration-300">2013</span>
-            </button>
-            <button
-              class="timeline-year-btn snap-center shrink-0 w-[4.5rem] h-[4.5rem] rounded-full bg-[#151413] border border-transparent transition-all duration-500 flex items-center justify-center group"
-              data-index="7">
-              <span
-                class="year-text font-display text-base md:text-lg font-medium text-[#a0805a] group-hover:text-white transition-colors duration-300">2015</span>
-            </button>
-          </div>
+          <article class="journey-milestone journey-milestone--bottom">
+            <div class="journey-milestone__card">
+              <div class="journey-milestone__media">
+                <img src="assets/konlas-fuar.jpg" alt="1997 büyüme dönemi">
+              </div>
+              <div class="journey-milestone__copy">
+                <span class="journey-milestone__year">1997</span>
+                <h3>Büyüme Dönemi</h3>
+                <p>Büyüyen ihtiyaçlara büyük çözümler ve daha güçlü operasyon altyapısıyla yanıt verdik.</p>
+              </div>
+            </div>
+            <span class="journey-milestone__connector" aria-hidden="true"></span>
+            <span class="journey-milestone__dot" aria-hidden="true"></span>
+          </article>
+
+          <article class="journey-milestone journey-milestone--top">
+            <div class="journey-milestone__card">
+              <div class="journey-milestone__media">
+                <img src="assets/AboutBG1.jpg" alt="2013 yeni merkez">
+              </div>
+              <div class="journey-milestone__copy">
+                <span class="journey-milestone__year">2013</span>
+                <h3>Yeni Merkez</h3>
+                <p>Modern tesisimize taşınarak hizmet kalitemizi bir üst seviyeye taşıdık.</p>
+              </div>
+            </div>
+            <span class="journey-milestone__connector" aria-hidden="true"></span>
+            <span class="journey-milestone__dot" aria-hidden="true"></span>
+          </article>
+
+          <article class="journey-milestone journey-milestone--bottom">
+            <div class="journey-milestone__card">
+              <div class="journey-milestone__media journey-milestone__media--brands">
+                <img src="assets/timeline-tire.png" alt="2018 global iş birlikleri">
+                <div class="journey-milestone__brand-strip" aria-hidden="true">
+                  <span>GOODYEAR</span>
+                  <span>GITI</span>
+                  <span>OTANI</span>
+                  <span>MAXTREK</span>
+                </div>
+              </div>
+              <div class="journey-milestone__copy">
+                <span class="journey-milestone__year">2018</span>
+                <h3>Global İş Birlikleri</h3>
+                <p>Dünyanın önde gelen lastik markalarının Türkiye iş birlikleriyle marka gücümüzü büyüttük.</p>
+              </div>
+            </div>
+            <span class="journey-milestone__connector" aria-hidden="true"></span>
+            <span class="journey-milestone__dot" aria-hidden="true"></span>
+          </article>
+
+          <article class="journey-milestone journey-milestone--top">
+            <div class="journey-milestone__card">
+              <div class="journey-milestone__media journey-milestone__media--map journey-milestone__media--map-dark">
+                <img src="assets/dealer-map.svg" alt="2022 türkiye genelinde">
+              </div>
+              <div class="journey-milestone__copy">
+                <span class="journey-milestone__year">2022</span>
+                <h3>Türkiye Genelinde</h3>
+                <p>Bayilik ağımızı genişleterek Türkiye'nin dört bir yanına ulaştık.</p>
+              </div>
+            </div>
+            <span class="journey-milestone__connector" aria-hidden="true"></span>
+            <span class="journey-milestone__dot" aria-hidden="true"></span>
+          </article>
+
+          <article class="journey-milestone journey-milestone--bottom">
+            <div class="journey-milestone__card">
+              <div class="journey-milestone__media">
+                <img src="assets/ebaytt.png" alt="Bugün lasmax">
+              </div>
+              <div class="journey-milestone__copy">
+                <span class="journey-milestone__year">Bugün</span>
+                <h3>Geleceğe Yolculuk</h3>
+                <p>Yenilikçi çözümlerle sektöre yön veriyor, büyümeye kararlılıkla devam ediyoruz.</p>
+              </div>
+            </div>
+            <span class="journey-milestone__connector" aria-hidden="true"></span>
+            <span class="journey-milestone__dot" aria-hidden="true"></span>
+          </article>
+
+          <article class="journey-milestone journey-milestone--top">
+            <div class="journey-milestone__card journey-milestone__card--future">
+              <div class="journey-milestone__future-icon" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="journey-milestone__copy">
+                <span class="journey-milestone__year">Yarın</span>
+                <h3>Daha Güçlü Yarınlar</h3>
+                <p>Yarınlara güvenle, yenilikle ilerliyoruz. Hedefimiz: daha güçlü yollar ve daha güvenli sürüşler.</p>
+              </div>
+            </div>
+            <span class="journey-milestone__connector" aria-hidden="true"></span>
+            <span class="journey-milestone__dot" aria-hidden="true"></span>
+          </article>
         </div>
 
-        <!-- The content area -->
-        <div class="timeline-content mt-8 md:mt-16 relative">
-          <!-- Connecting Line (only desktop) -->
-          <div
-            class="hidden md:block absolute left-[41.666%] lg:left-[41.666%] top-[20%] w-[12%] h-[1px] bg-[#a0805a] z-0 opacity-50">
-          </div>
-
-          <div
-            class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-0 items-start flex-col-reverse md:flex-row relative z-10">
-            <div class="md:col-span-6 lg:col-span-5 relative order-2 md:order-1 flex justify-center md:justify-start">
-              <!-- Image -->
-              <img id="timeline-display-img" src="assets/sonmez-oto.jpg" alt="1979"
-                class="w-full max-w-[500px] h-[300px] md:h-[380px] object-cover shadow-2xl transition-opacity duration-500 rounded-sm">
+        <div class="journey-stats" aria-label="Lasmax temel istatistikler">
+          <article class="journey-stats__item">
+            <div class="journey-stats__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <rect x="3" y="5" width="18" height="16" rx="3"></rect>
+                <path d="M8 3v4M16 3v4M3 10h18"></path>
+                <path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"></path>
+              </svg>
             </div>
-
-            <div
-              class="md:col-span-5 lg:col-span-5 md:col-start-7 lg:col-start-7 order-1 md:order-2 text-center md:text-left pt-0 md:pt-4">
-              <!-- Text -->
-              <h3 id="timeline-display-title"
-                class="font-display text-5xl md:text-7xl font-bold text-white mb-4 transition-opacity duration-500 leading-none">
-                1979</h3>
-              <p id="timeline-display-desc"
-                class="font-body text-base text-gray-300 leading-relaxed transition-opacity duration-500 font-light">
-                KONLAS, 1979 yılında 20 m²'lik bir alanda faaliyetlerine başlamış; sürdürülebilir büyüme anlayışıyla
-                güçlü temeller atmıştır.
-              </p>
+            <div>
+              <strong>45+</strong>
+              <span>Yıl Deneyim</span>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
+          </article>
 
-    <!-- Legacy Story Section (Orbit) moved below -->
-    <div class="shell--wide">
-      <div class="story-layout">
-        <div class="story-copy">
-          <img class="story-copy__logo" src="assets/logo-konlas.svg" alt="Konlas Otomotiv">
-          <p>
-            KONLAS, 1979 yılında 20 m²'lik bir alanda faaliyetlerine başlamış; sürdürülebilir büyüme
-            anlayışıyla bugün 60 çalışanı ile 1.500 m²'lik merkez binasında ve 15.000 m²'si kapalı,
-            7.000 m²'si açık olmak üzere geniş depolama alanlarında hizmet vermektedir.
-          </p>
-          <p>
-            1997 yılından itibaren uluslararası pazarlara açılan KONLAS, dünyanın farklı ülkelerinde
-            üretilen kaliteli lastik markalarını Türkiye pazarına sunarak sektöründe güçlü ve güvenilir
-            bir ithalatçı konumuna ulaşmıştır.
-          </p>
-          <p>
-            2013 yılında KONLAS A.Ş.'nin bayilik sistemi olarak kurulan Lasmax, bugün Türkiye'nin dört
-            bir yanındaki bayi ve hizmet ağıyla büyümesini sürdürmekte, premium segmentte sürdürülebilir
-            bir değer zinciri kurmaktadır.
-          </p>
-        </div>
-
-        <div class="timeline-stage">
-          <div class="timeline-orbit" style="background-image: url('assets/timeline-bg.svg');">
-            <div class="timeline-orbit__glow"></div>
-            <img class="timeline-orbit__tire" src="assets/timeline-tire.png" alt="Lasmax tarihçe merkez görseli">
-
-            <div class="milestone" style="left: 50%; top: 8%;">
-              <div class="milestone__year">1979</div>
-              <div class="milestone__text">Kuruluş</div>
+          <article class="journey-stats__item">
+            <div class="journey-stats__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9.5" cy="7" r="4"></circle>
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
             </div>
-
-            <div class="milestone" style="left: 80%; top: 18%;">
-              <div class="milestone__year">1989</div>
-              <img class="milestone__logo" src="assets/timeline-fulda.svg" alt="Fulda">
-              <div class="milestone__text">Distribütörlüğü</div>
+            <div>
+              <strong>80+</strong>
+              <span>Aktif Bayi Ağı</span>
             </div>
+          </article>
 
-            <div class="milestone" style="left: 92%; top: 50%;">
-              <div class="milestone__year">1997</div>
-              <img class="milestone__logo" src="assets/timeline-lassa.png" alt="Lassa">
-              <div class="milestone__text">Distribütörlüğü</div>
+          <article class="journey-stats__item">
+            <div class="journey-stats__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M12 3l7 3v6c0 4.4-3 8.43-7 9-4-0.57-7-4.6-7-9V6l7-3z"></path>
+                <path d="M9 12l2 2 4-4"></path>
+              </svg>
             </div>
+            <div>
+              <strong>1M+</strong>
+              <span>Yıllık Sevkiyat</span>
+            </div>
+          </article>
 
-            <div class="milestone" style="left: 80%; top: 82%;">
-              <div class="milestone__year">1998</div>
-              <img class="milestone__logo" src="assets/TriangleBlue.svg" alt="TriangleBlue">
-              <div class="milestone__text">Türkiye Distribütörü</div>
+          <article class="journey-stats__item">
+            <div class="journey-stats__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="9"></circle>
+                <path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"></path>
+              </svg>
             </div>
-
-            <div class="milestone" style="left: 8%; top: 50%;">
-              <div class="milestone__year">2007</div>
-              <img class="milestone__logo" src="assets/timeline-giti.png" alt="Giti">
-              <div class="milestone__text">Türkiye Distribütörü</div>
+            <div>
+              <strong>4</strong>
+              <span>Global Marka</span>
             </div>
-
-            <div class="milestone" style="left: 20%; top: 82%;">
-              <div class="milestone__year">2006</div>
-              <img class="milestone__logo" src="assets/timeline-otani.png" alt="Otani">
-              <div class="milestone__text">Türkiye Distribütörü</div>
-            </div>
-
-            <div class="milestone" style="left: 50%; top: 92%;">
-              <div class="milestone__year">2007</div>
-              <img class="milestone__logo" src="assets/timeline-zc-rubber.png" alt="ZC Rubber">
-              <div class="milestone__text">Türkiye Distribütörü</div>
-            </div>
-
-            <div class="milestone" style="left: 20%; top: 18%;">
-              <div class="milestone__year">2015</div>
-              <img class="milestone__logo" src="assets/timeline-groundspeed.png" alt="Groundspeed">
-              <div class="milestone__text">Türkiye Distribütörü</div>
-            </div>
-          </div>
-
-          <div class="timeline-mobile">
-            <div class="timeline-mobile__grid">
-              <article class="timeline-mobile__item">
-                <div class="milestone__year">1979</div>
-                <p>Kuruluş</p>
-              </article>
-              <article class="timeline-mobile__item">
-                <div class="milestone__year">1989</div>
-                <img src="assets/timeline-fulda.svg" alt="Fulda">
-                <p>Distribütörlüğü</p>
-              </article>
-              <article class="timeline-mobile__item">
-                <div class="milestone__year">1997</div>
-                <img src="assets/timeline-lassa.png" alt="Lassa">
-                <p>Distribütörlüğü</p>
-              </article>
-              <article class="timeline-mobile__item">
-                <div class="milestone__year">22</div>
-                <img src="assets/timeline-sava.png" alt="Sava">
-                <p>Türkiye Distribütörü</p>
-              </article>
-              <article class="timeline-mobile__item">
-                <div class="milestone__year">2007</div>
-                <img src="assets/timeline-giti.png" alt="Giti">
-                <p>Türkiye Distribütörü</p>
-              </article>
-              <article class="timeline-mobile__item">
-                <div class="milestone__year">2006</div>
-                <img src="assets/timeline-otani.png" alt="Otani">
-                <p>Türkiye Distribütörü</p>
-              </article>
-              <article class="timeline-mobile__item">
-                <div class="milestone__year">2015</div>
-                <img src="assets/timeline-groundspeed.png" alt="Groundspeed">
-                <p>Türkiye Distribütörü</p>
-              </article>
-            </div>
-          </div>
+          </article>
         </div>
       </div>
-    </div>
     </section>
   </main>
 
@@ -393,7 +310,7 @@
           <div class="footer__column">
             <h3>Kurumsal</h3>
             <nav aria-label="Kurumsal linkler">
-              <a href="about2.html">Hakkımızda</a>
+              <a href="about.html">Hakkımızda</a>
               <a href="index.html#servisler">Destek</a>
             </nav>
           </div>
