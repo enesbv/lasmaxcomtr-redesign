@@ -2126,6 +2126,8 @@ body.nav-open .menu-toggle span:nth-child(3) {
     radial-gradient(circle at 50% 20%, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0) 36%),
     url("assets/timeline-bg.svg") center 54% / cover no-repeat;
   opacity: 0.22;
+  filter: blur(8px);
+  transform: scale(1.05);
   z-index: -2;
 }
 
@@ -2701,7 +2703,8 @@ body.nav-open .menu-toggle span:nth-child(3) {
     linear-gradient(180deg, rgba(1, 4, 8, 0.56) 0%, rgba(3, 8, 14, 0.32) 24%, rgba(3, 6, 10, 0.82) 100%),
     url("assets/AboutBG.png") center 54% / cover no-repeat;
   opacity: 0.72;
-  filter: saturate(0.78) brightness(0.54);
+  filter: saturate(0.78) brightness(0.54) blur(3px);
+  transform: scale(1.05);
 }
 
 .journey-timeline__watermark {
